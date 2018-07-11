@@ -22,6 +22,9 @@ git add README.md
 git commit
 - commits the file to be pushed
 
+git commig -m 'Init commit'
+- adds message to your commit 
+
 git push 
 - pushes file to repository
 
@@ -35,7 +38,7 @@ git status -s
 - see your changes in a more compact way 
 
 git config credential.helper 'cache --timeout=1800'
-- on push to repository Git wont ask you for your username and password for 30 min
+- on push to repository Git wont ask you for your username and password for 30 min after the next push
 
 
 
