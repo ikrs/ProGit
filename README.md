@@ -92,4 +92,46 @@ git mv file_from file_to
 - rename a file in Git
 
 git log
-- view the commit history
+- view the commit history in current repository in reverse chronological order
+- look online for more git log options
+
+git log -p
+- shows difference introduced in each commit (something like git diff)
+
+git log -p -2 
+- shows difference in last 2 commits
+
+git log --stat
+- abbreviated stats for each commit (how many files were changed, how many lines in those files changed), it also puts a summary of the information at the end
+
+git log --pretty=format/oneline/short/full/fuller
+- changes the log output to formats other than the default
+- "format" option allows you to specify your own log output format, list of all format options can be found online
+ 		
+		Example of custom format
+
+		git log -4 --pretty=format:"%h - %an, %ar : %s" 
+		306394b - ikrs, 13 minutes ago : git mv and git log
+		82a5733 - ikrs, 18 minutes ago : git rm and related actions
+		8677eec - ikrs, 32 minutes ago : git commit -a
+		1973597 - ikrs, 3 hours ago : git diff --staged (add)
+
+- the "oneline" and "format" are particulary useful with another log option called --graph, this option adds a nice little ASCII graph showing your branch and merge history
+
+		Example of a --graph option
+
+		git log --pretty=format:"%h %s" --graph
+		* 2d3acf9 ignore errors from SIGCHLD on trap
+		* 5e3ee11 Merge branch 'master' of git://github.com/dustin/grit
+		|\
+		| * 420eac9 Added a method for getting the current branch.
+		* | 30e367c timeout code and tests
+		* | 5a09431 add timeout protection to grit
+		* | e1193f8 support for heads with slashes in them
+		|/
+		* d6016bc require time for xmlschema
+		* 11d191e Merge branch 'defunkt' into local
+
+
+Page 43 Limitin Log Output
+
