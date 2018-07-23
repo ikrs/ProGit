@@ -42,8 +42,8 @@ git config credential.helper 'cache --timeout=1800'
 
 
 .gitignore
-*.[oa] -> ignore any file ending in ".o" or ".a"
-*~ -> ignore all files whose names end with a tilde, which is used by many text editors to mark temp files
+- *.[oa] -> ignore any file ending in ".o" or ".a"
+- *~ -> ignore all files whose names end with a tilde, which is used by many text editors to mark temp files
 
 		Example .gitignore file
 		*.a -> ignore all .a files
