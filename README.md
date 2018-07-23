@@ -87,3 +87,9 @@ git rm -f filename
 
 git rm --cached filename
 - keep the file in your working three but remove it from staging area, preatty usefull if we forgot to add some file in .gitignore
+
+git mv file_from file_to
+- rename a file in Git
+
+git log
+- view the commit history
