@@ -47,12 +47,22 @@ git config credential.helper 'cache --timeout=1800'
 
 		Example .gitignore file
 		#ignore all .a files
-		*.a 
-		!lib.a -> but do track lib.a, even though you're ignoring .a files above
-		/TODO -> only ignore the TODO file in the current directory,not subdir/TODO
-		build/ -> ignore all files in the build/ directory
-		doc/*.txt -> ignore doc/notes.txt, but not doc/server/arch.txt
-		doc/**/*.pdf -> ignore all.pdf files in the doc/ directory any any of its subdirectories
+		*.a
+
+		#but do track lib.a, even though you're ignoring .a files above 
+		!lib.a 
+
+		#only ignore the TODO file in the current directory,not subdir/TODO
+		/TODO
+
+		#ignore all files in the build/ directory
+		build/
+
+		#ignore doc/notes.txt, but not doc/server/arch.txt
+		doc/*.txt
+
+		#ignore all.pdf files in the doc/ directory any any of its subdirectories
+		doc/**/*.pdf
 
 
 GitHub maintains a fairly comprehensive list of good .gitignore file examples for dozens of projects and languages at 
@@ -61,4 +71,7 @@ https://github.com/github/gitignore if you want a starting point for your projec
 
 git diff
 - shows you the exact lines added and removed, while git status shows only file names witch contain changes
+
+git diff --staged
+- Used to see what you've staged that will go into your next commit
 
