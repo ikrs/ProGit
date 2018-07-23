@@ -77,4 +77,13 @@ git diff --staged
 - Used to see what you've staged (git add) that will go into your next commit
 
 git commit -a
-- makes git automatically stage (add) every file that is already tracked, lettig you skip the git add part
+- makes git automatically stage (add) every file that is already tracked, letting you skip the git add part
+
+git rm filename
+- remove file from Git and from staging area, it also deleats it locally
+
+git rm -f filename
+- if you modified the file and added it to staging area you must force remove it, it also deleats it locally
+
+git rm --cached filename
+- keep the file in your working three but remove it from staging area, preatty usefull if we forgot to add some file in .gitignore
