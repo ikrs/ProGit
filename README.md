@@ -42,27 +42,16 @@ git config credential.helper 'cache --timeout=1800'
 
 
 .gitignore
-- *.[oa] -> ignore any file ending in ".o" or ".a"
-- +~ -> ignore all files whose names end with a tilde, which is used by many text editors to mark temp files
+*.[oa] -> ignore any file ending in ".o" or ".a"
+*~ -> ignore all files whose names end with a tilde, which is used by many text editors to mark temp files
 
-
-ignore all .a files
-*.a
-
-but do track lib.a, even though you're ignoring .a files above
-!lib.a
-
-only ignore the TODO file in the current directory, not subdir/TODO
-/TODO
-
-ignore all files in the build/ directory
-build/
-
-ignore doc/notes.txt, but not doc/server/arch.txt
-doc/*.txt
-
-ignore all.pdf files in the doc/ directory any any of its subdirectories
-doc/**/*.pdf
+Example .gitignore file
+*.a -> ignore all .a files
+!lib.a -> but do track lib.a, even though you're ignoring .a files above
+/TODO -> only ignore the TODO file in the current directory,not subdir/TODO
+build/ -> ignore all files in the build/ directory
+doc/*.txt -> ignore doc/notes.txt, but not doc/server/arch.txt
+doc/**/*.pdf -> ignore all.pdf files in the doc/ directory any any of its subdirectories
 
 
 GitHub maintains a fairly comprehensive list of good .gitignore file examples for dozens of projects and languages at 
