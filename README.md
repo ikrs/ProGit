@@ -73,5 +73,5 @@ git diff
 - shows you the exact lines added and removed, while git status shows only file names witch contain changes
 
 git diff --staged
-- Used to see what you've staged that will go into your next commit
+- Used to see what you've staged (git add) that will go into your next commit
 
