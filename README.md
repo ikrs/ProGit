@@ -46,7 +46,8 @@ git config credential.helper 'cache --timeout=1800'
 - *~ -> ignore all files whose names end with a tilde, which is used by many text editors to mark temp files
 
 		Example .gitignore file
-		*.a -> ignore all .a files
+		#ignore all .a files
+		*.a 
 		!lib.a -> but do track lib.a, even though you're ignoring .a files above
 		/TODO -> only ignore the TODO file in the current directory,not subdir/TODO
 		build/ -> ignore all files in the build/ directory
