@@ -104,6 +104,16 @@ git log -p -2
 git log --stat
 - abbreviated stats for each commit (how many files were changed, how many lines in those files changed), it also puts a summary of the information at the end
 
+git log --since=2.weeks
+- this command gets the list of commits made in last two weeks
+- it works with alot of formats like "2018-01-15", "2 years 1 day 1 minute ago", ...
+
+git log --author=ikrs
+- show commits of a specific author
+
+git log --grep=test
+- search for keyword "test" in commit messages
+
 git log --pretty=format/oneline/short/full/fuller
 - changes the log output to formats other than the default
 - "format" option allows you to specify your own log output format, list of all format options can be found online
@@ -133,10 +143,13 @@ git log --pretty=format/oneline/short/full/fuller
 		* 11d191e Merge branch 'defunkt' into local
 
 
-Page 43 Limitin Log Output
+git log -S function_name
+- colloquially reffered to as Git's "pickaxe" option
+- takes a string and shows only those commits that changed the number of occurances of that string
 
-http://boxes-loc.hr/
-https://boxes-loc.hr/
+
+
+
 
 
 
