@@ -135,3 +135,8 @@ git log --pretty=format/oneline/short/full/fuller
 
 Page 43 Limitin Log Output
 
+http://boxes-loc.hr/
+https://boxes-loc.hr/
+
+
+
