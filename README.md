@@ -158,10 +158,10 @@ git commit --amend
 		$ git commit --amend
 
 
-git reset HEAD fileName
+<pre>git reset HEAD <fileName><pre>
 - when you staged ( add ) file you didnt want to stage you can remove it from staging area
 
-git checkout --fileName
+git checkout --<fileName>
 - dont want to keep the changes to the file, you can revert it back to what it looked like when you last commited
 
 git remote 
@@ -170,9 +170,9 @@ git remote
 git remote -v
 - shows you the URL that Git has stored for the shortname to be used when reading and writing to that remote
 
-git fetch remote
+git fetch <remote>
 
-git remote add shortname url
+git remote add <shortname> <url>
 - add a new remote repository explicitly
 		git remote add paul https://github.com/paulboone/ticgit
 - now you can use the string paul in the command line instead of the whole URL, if we want to fetch all the information that Paul has but that you dont yet have in your repository you can run
