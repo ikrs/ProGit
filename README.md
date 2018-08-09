@@ -158,10 +158,10 @@ git commit --amend
 		$ git commit --amend
 
 
-<pre>git reset HEAD <fileName><pre>
+`git reset HEAD <fileName>`
 - when you staged ( add ) file you didnt want to stage you can remove it from staging area
 
-git checkout --<fileName>
+`git checkout --<fileName>`
 - dont want to keep the changes to the file, you can revert it back to what it looked like when you last commited
 
 git remote 
