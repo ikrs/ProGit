@@ -147,8 +147,15 @@ git log -S function_name
 - colloquially reffered to as Git's "pickaxe" option
 - takes a string and shows only those commits that changed the number of occurances of that string
 
+git log --author=ikrs --no-merges
+- prevent the display of merge commits cluttering up your log history
 
+git commit --amend
+- if you want to redo the commit, make the additional changes you forgot, stage them and commit again using --amend option so you end up with a single commit
 
+		$ git commit -m 'initial commit'
+		$ git add forgotten_file
+		$ git commit --amend
 
 
 
