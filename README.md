@@ -164,3 +164,8 @@ git reset HEAD <fileName>
 git checkout --<fileName>
 - dont want to keep the changes to the file, you can revert it back to what it looked like when you last commited
 
+git remote 
+-see which remote servers you have configured
+
+git remote -v
+- shows you the URL that Git has stored for the shortname to be used when reading and writing to that remote
