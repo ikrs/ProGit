@@ -172,6 +172,7 @@ https://github.com/github/gitignore if you want a starting point for your projec
 
 `git fetch remote`
 - get data from your remote projects
+- this commands goes out to that remote project and pulls down all the data from that remote project that you dont have yet
 
 `git remote add <shortname> <url>`
 - add a new remote repository explicitly
@@ -180,3 +181,14 @@ https://github.com/github/gitignore if you want a starting point for your projec
 		git fetch paul
 - paul master branch is now accessible locally as 'pb/master', you can merge it into one of your branches or you can check out a local branch at that point if you want to inspect it
 
+`git pull`
+- automatically fetch and then merge that remote branch into your current branch. This may be an easier or more comfortable workflow
+
+`git push <remote> <branch>`
+- if you want to push your master branch to origin server then you can run
+		git push origin master
+- this works only if you cloned from a server to which you have write access and if nobody has pushed in the meantime
+
+`git remote show <remote>`
+- shows more information about a particular remote
+		git remote show origin
